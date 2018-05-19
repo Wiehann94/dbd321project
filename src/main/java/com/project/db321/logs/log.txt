@@ -1,0 +1,254 @@
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into country (country_name, last_update, country_id) values (?, ?, ?)
+2018-05-19 19:08:38.593 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Philippines]
+2018-05-19 19:08:38.593 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.593 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4773]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into city (city_name, country_id, last_update, city_id) values (?, ?, ?, ?)
+2018-05-19 19:08:38.602 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Batangas]
+2018-05-19 19:08:38.602 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
+2018-05-19 19:08:38.602 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.602 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4774]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.607 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Birnam]
+2018-05-19 19:08:38.607 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Bristol]
+2018-05-19 19:08:38.607 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2]
+2018-05-19 19:08:38.608 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.608 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [1]
+2018-05-19 19:08:38.608 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [5843]
+2018-05-19 19:08:38.608 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4775]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.825 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [F]
+2018-05-19 19:08:38.825 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2018-05-19 19:08:38.825 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [RyanMorgan@gmail.com]
+2018-05-19 19:08:38.825 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Pat]
+2018-05-19 19:08:38.826 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Cook]
+2018-05-19 19:08:38.826 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4776]
+2018-05-19 19:08:38.827  INFO 5108 --- [  restartedMain] com.project.db321.Db321Application       : 2
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into country (country_name, last_update, country_id) values (?, ?, ?)
+2018-05-19 19:08:38.829 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Greece]
+2018-05-19 19:08:38.829 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.829 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4777]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into city (city_name, country_id, last_update, city_id) values (?, ?, ?, ?)
+2018-05-19 19:08:38.855 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Banha]
+2018-05-19 19:08:38.855 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2018-05-19 19:08:38.856 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.856 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4778]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Highlands]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Banjul]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [3]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [411]
+2018-05-19 19:08:38.859 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4779]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [F]
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [4]
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [LeighannWilliams@gmail.com]
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Jan]
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Howard]
+2018-05-19 19:08:38.863 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4780]
+2018-05-19 19:08:38.864  INFO 5108 --- [  restartedMain] com.project.db321.Db321Application       : 4
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into country (country_name, last_update, country_id) values (?, ?, ?)
+2018-05-19 19:08:38.867 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Luxembourg]
+2018-05-19 19:08:38.868 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.868 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4781]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into city (city_name, country_id, last_update, city_id) values (?, ?, ?, ?)
+2018-05-19 19:08:38.871 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bankura]
+2018-05-19 19:08:38.871 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [5]
+2018-05-19 19:08:38.872 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.872 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4782]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Sandringham]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Bahir]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [6]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [5]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [5351]
+2018-05-19 19:08:38.874 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4783]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.877 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [F]
+2018-05-19 19:08:38.877 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [6]
+2018-05-19 19:08:38.877 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [DonovanPhillips@gmail.com]
+2018-05-19 19:08:38.878 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Johnny]
+2018-05-19 19:08:38.878 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Evans]
+2018-05-19 19:08:38.878 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4784]
+2018-05-19 19:08:38.936  INFO 5108 --- [  restartedMain] com.project.db321.Db321Application       : 6
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into country (country_name, last_update, country_id) values (?, ?, ?)
+2018-05-19 19:08:38.937 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Brazil]
+2018-05-19 19:08:38.938 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.938 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4785]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into city (city_name, country_id, last_update, city_id) values (?, ?, ?, ?)
+2018-05-19 19:08:38.941 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Aceh]
+2018-05-19 19:08:38.941 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [7]
+2018-05-19 19:08:38.941 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.941 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4786]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Wynberg]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Bathinda]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [8]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [7]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [8513]
+2018-05-19 19:08:38.945 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4787]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T]
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [8]
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [DanielWilliams@gmail.com]
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Marvin]
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Jenkins]
+2018-05-19 19:08:38.949 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4788]
+2018-05-19 19:08:38.951  INFO 5108 --- [  restartedMain] com.project.db321.Db321Application       : 8
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into country (country_name, last_update, country_id) values (?, ?, ?)
+2018-05-19 19:08:38.953 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Armenia]
+2018-05-19 19:08:38.954 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.954 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4789]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into city (city_name, country_id, last_update, city_id) values (?, ?, ?, ?)
+2018-05-19 19:08:38.956 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Barrackpur]
+2018-05-19 19:08:38.957 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [9]
+2018-05-19 19:08:38.957 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.957 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4790]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [River]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Baraki]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [10]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2018-05-19 19:08:38.5]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [9]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [443]
+2018-05-19 19:08:38.960 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4791]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [F]
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [10]
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [DaltonBaker@gmail.com]
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Theron]
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Clark]
+2018-05-19 19:08:38.963 TRACE 5108 --- [  restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4792]
+2018-05-19 19:08:38.965  INFO 5108 --- [  restartedMain] com.project.db321.Db321Application       : 10
+2018-05-19 19:09:09.013  INFO 5108 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-19 19:09:09.013  INFO 5108 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-19 19:09:09.036  INFO 5108 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-05-19 19:09:09.297  INFO 5108 --- [nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select customer0_.customer_id as customer_id1_3_, customer0_.active as active2_3_, customer0_.address_id as address_id3_3_, customer0_.email as email4_3_, customer0_.first_name as first_name5_3_, customer0_.last_name as last_name6_3_ from customer customer0_
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select address0_.address_id as address_id1_0_0_, address0_.suburb as suburb2_0_0_, address0_.address as address3_0_0_, address0_.city_id as city_id4_0_0_, address0_.last_update as last_update5_0_0_, address0_.phone_no as phone_no6_0_0_, address0_.postal_code as postal_code7_0_0_ from address address0_ where address0_.address_id=?
+2018-05-19 19:12:02.153 TRACE 5108 --- [nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4791]
+Hibernate: delete from address where address_id=?
+2018-05-19 19:12:02.625 TRACE 5108 --- [nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4791]
+Hibernate: select address0_.address_id as address_id1_0_0_, address0_.suburb as suburb2_0_0_, address0_.address as address3_0_0_, address0_.city_id as city_id4_0_0_, address0_.last_update as last_update5_0_0_, address0_.phone_no as phone_no6_0_0_, address0_.postal_code as postal_code7_0_0_ from address address0_ where address0_.address_id=?
+2018-05-19 19:12:04.068 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4787]
+Hibernate: delete from address where address_id=?
+2018-05-19 19:12:04.070 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4787]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2018-05-19 19:12:10.478 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4793]
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2018-05-19 19:12:30.440 TRACE 5108 --- [nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4794]
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select address0_.address_id as address_id1_0_0_, address0_.suburb as suburb2_0_0_, address0_.address as address3_0_0_, address0_.city_id as city_id4_0_0_, address0_.last_update as last_update5_0_0_, address0_.phone_no as phone_no6_0_0_, address0_.postal_code as postal_code7_0_0_ from address address0_ where address0_.address_id=?
+2018-05-19 19:14:08.425 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4793]
+Hibernate: delete from address where address_id=?
+2018-05-19 19:14:08.427 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4793]
+Hibernate: select address0_.address_id as address_id1_0_0_, address0_.suburb as suburb2_0_0_, address0_.address as address3_0_0_, address0_.city_id as city_id4_0_0_, address0_.last_update as last_update5_0_0_, address0_.phone_no as phone_no6_0_0_, address0_.postal_code as postal_code7_0_0_ from address address0_ where address0_.address_id=?
+2018-05-19 19:14:09.017 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4794]
+Hibernate: delete from address where address_id=?
+2018-05-19 19:14:09.021 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4794]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into address (suburb, address, city_id, last_update, phone_no, postal_code, address_id) values (?, ?, ?, ?, ?, ?, ?)
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2018-05-19 19:14:18.086 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [4795]
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select customer0_.customer_id as customer_id1_3_, customer0_.active as active2_3_, customer0_.address_id as address_id3_3_, customer0_.email as email4_3_, customer0_.first_name as first_name5_3_, customer0_.last_name as last_name6_3_ from customer customer0_
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select customer0_.customer_id as customer_id1_3_, customer0_.active as active2_3_, customer0_.address_id as address_id3_3_, customer0_.email as email4_3_, customer0_.first_name as first_name5_3_, customer0_.last_name as last_name6_3_ from customer customer0_
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:21:57.462 TRACE 5108 --- [nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4763]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:21:57.464 TRACE 5108 --- [nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4763]
+Hibernate: select customer0_.customer_id as customer_id1_3_, customer0_.active as active2_3_, customer0_.address_id as address_id3_3_, customer0_.email as email4_3_, customer0_.first_name as first_name5_3_, customer0_.last_name as last_name6_3_ from customer customer0_
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:21:59.435 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4792]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:21:59.439 TRACE 5108 --- [nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4792]
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:22:00.482 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4788]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:22:00.484 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4788]
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:22:00.561 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4784]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:22:00.563 TRACE 5108 --- [nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4784]
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:22:01.368 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4780]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:22:01.370 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4780]
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:22:01.538 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4745]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:22:01.541 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4745]
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select customer0_.customer_id as customer_id1_3_0_, customer0_.active as active2_3_0_, customer0_.address_id as address_id3_3_0_, customer0_.email as email4_3_0_, customer0_.first_name as first_name5_3_0_, customer0_.last_name as last_name6_3_0_ from customer customer0_ where customer0_.customer_id=?
+2018-05-19 19:22:02.148 TRACE 5108 --- [io-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4742]
+Hibernate: delete from customer where customer_id=?
+2018-05-19 19:22:02.149 TRACE 5108 --- [io-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4742]
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [null]
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [null]
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [null]
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2018-05-19 19:22:14.790 TRACE 5108 --- [nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4796]
+Hibernate: select address0_.address_id as address_id1_0_, address0_.suburb as suburb2_0_, address0_.address as address3_0_, address0_.city_id as city_id4_0_, address0_.last_update as last_update5_0_, address0_.phone_no as phone_no6_0_, address0_.postal_code as postal_code7_0_ from address address0_
+Hibernate: select hibernate_sequence.nextval from dual
+Hibernate: insert into customer (active, address_id, email, first_name, last_name, customer_id) values (?, ?, ?, ?, ?, ?)
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [null]
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [null]
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [null]
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [null]
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2018-05-19 19:24:47.655 TRACE 5108 --- [nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4797]
+Hibernate: select address0_.address_id as address_id1_0_0_, address0_.suburb as suburb2_0_0_, address0_.address as address3_0_0_, address0_.city_id as city_id4_0_0_, address0_.last_update as last_update5_0_0_, address0_.phone_no as phone_no6_0_0_, address0_.postal_code as postal_code7_0_0_ from address address0_ where address0_.address_id=?
+2018-05-19 19:34:47.817 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4795]
+Hibernate: delete from address where address_id=?
+2018-05-19 19:34:47.819 TRACE 5108 --- [nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4795]

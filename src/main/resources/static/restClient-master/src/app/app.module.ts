@@ -22,8 +22,8 @@ import {CountryService} from './shared-service/country.service';
 import {CustomerService} from './shared-service/customer.service';
 
 const appRoutes:Routes=[
-  {path:'', component:ListuserComponent},
-    {path:'op', component:UserFormComponent},
+  //{path:'', component:ListuserComponent},
+  //{path:'op', component:UserFormComponent},
   {path: 'cities', component:ListCitiesComponent},
   {path: 'customers', component:ListCustomersComponent},
   {path: 'countries', component:ListCountriesComponent},
@@ -31,7 +31,12 @@ const appRoutes:Routes=[
   {path: 'citiesform', component:CityFormComponent},
   {path: 'countriesform', component:CountryFormComponent},
   {path: 'custoemrsfrom', component:CustomerFormComponent},
-  {path: 'addressform', component:AddressFormComponent}
+  {path: 'addressform', component:AddressFormComponent},
+  {path: 'customer', component:CustomerFormComponent},
+  {path: 'city', component:CityFormComponent},
+  {path: 'country', component:CountryFormComponent},
+  {path: 'address', component:AddressFormComponent}
+  // {path: '',}
 ];
 
 @NgModule({

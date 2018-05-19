@@ -3,7 +3,6 @@ import {CityService} from "../../shared-service/city.service";
 import {City} from "../../city";
 import {Router} from "@angular/router";
 
-
 @Component({
   selector: 'app-city-form',
   templateUrl: './city-form.component.html',
@@ -19,7 +18,7 @@ export class CityFormComponent implements OnInit {
   }
 
   processFormCity(){
-    if(this.city.country_Id==undefined){
+    if(this.city.city_Id==undefined){
       this._cityService.createCity(this.city).subscribe((city)=>{
         console.log(city);
         this._router.navigate(['/']);

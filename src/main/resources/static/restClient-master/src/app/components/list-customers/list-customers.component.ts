@@ -33,14 +33,14 @@ export class ListCustomersComponent implements OnInit {
 
   updatCustomer(customer){
     this._customerService.setter(customer);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/customer']);
 
 
   }
   newCustomer(){
     let customer = new Customer();
     this._customerService.setter(customer);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/customer']);
 
   }
 

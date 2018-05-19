@@ -43,8 +43,9 @@ public class CustomerController {
     }
 
     @DeleteMapping("/customer/{id}")
-    public void deleteCustomer(@PathVariable String id) {
-        customerRepository.deleteById(Long.valueOf(id));
+    public boolean deleteCustomer(@PathVariable Long id) {
+        customerRepository.deleteById(id);
+        return true;
     }
 
 }

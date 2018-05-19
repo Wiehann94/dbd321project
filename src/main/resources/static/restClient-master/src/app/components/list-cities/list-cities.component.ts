@@ -17,17 +17,17 @@ private city:City[];
 constructor(private _cityService:CityService, private _router:Router) { }
 
 ngOnInit() {
-  this._cityService.getCities().subscribe((addresses)=>{
-    console.log(addresses);
-    this.city= addresses;
+  this._cityService.getCities().subscribe((citiesData)=>{
+    console.log(citiesData);
+    this.city= citiesData;
   },(error)=>{
     console.log(error);
   })
 }
 
-deleteCity(address){
-  this._cityService.deleteCity(address.id).subscribe((data)=>{
-    this.city.splice(this.city.indexOf(address),1);
+deleteCity(city){
+  this._cityService.deleteCity(city.city_Id).subscribe((data)=>{
+    this.city.splice(this.city.indexOf(city),1);
   },(error)=>{
     console.log(error);
   });
@@ -35,16 +35,16 @@ deleteCity(address){
 
 updateCity(city){
   this._cityService.setter(city);
-  this._router.navigate(['/op']);
+  this._router.navigate(['/city']);
 
 
 }
+
 newCity(){
   let cities = new City();
   this._cityService.setter(cities);
-  this._router.navigate(['/op']);
+  this._router.navigate(['/city']);
 
 }
-
 }
 

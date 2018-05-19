@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 import {City} from '../city';
+import {log} from "util";
 
 @Injectable()
 export class CityService {
@@ -28,9 +29,8 @@ export class CityService {
 
   }
 
-  deleteCity(city_Id:Number){
-    return this._http.delete(this.baseUrl+'/city/'+ city_Id, this.options).map((response:Response)=>response.json())
-      .catch(this.errorHandler);
+  deleteCity(Id:Number){
+    return this._http.delete(this.baseUrl+'/city/'+ Id, this.options).map((response:Response)=>response.json());
 
   }
 

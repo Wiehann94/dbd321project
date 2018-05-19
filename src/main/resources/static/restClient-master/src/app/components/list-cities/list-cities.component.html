@@ -8,13 +8,13 @@
     <th>Country Id</th>
     </thead>
     <tbody>
-    <tr *ngFor="let cities of city">
-      <td>{{cities.city_Id}}</td>
-      <td>{{cities.city_Name}}</td>
-      <td>{{cities.last_Update}}</td>
-      <td>{{cities.country_Id}}</td>
-      <td><button class="btn btn-danger" (click)="deleteCity(cities)">Delete</button>
-        <button class="btn btn-primary" (click)="updateCity(cities)">Edit</button></td>
+    <tr *ngFor="let Cities of cities">
+      <td>{{Cities.city_Id}}</td>
+      <td>{{Cities.city_Name}}</td>
+      <td>{{Cities.last_Update}}</td>
+      <td>{{Cities.country_Id}}</td>
+      <td><button class="btn btn-danger" (click)="deleteCity(Cities)">Delete</button>
+        <button class="btn btn-primary" (click)="updateCity(Cities)">Edit</button></td>
 
     </tr>
     </tbody>

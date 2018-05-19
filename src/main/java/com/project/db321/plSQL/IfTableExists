@@ -1,0 +1,22 @@
+declare
+    Table_exists INTEGER;
+BEGIN
+    Select count(*) into Table_exists from sys.all_tables where table_name='country';
+
+    if(table_exists)=1 Then
+        Execute Immediate 'Drop Table country;'
+        Execute Immediate 'CREATE TABLE Country(
+    country_Id NUMBER(20),
+    country_Name varchar2(20),
+    last_Update TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );';
+        DBMS_OUTPUT.PUT_LINE('Table Dropped and Re-Created!');
+    Else
+        Execute Immediate 'CREATE TABLE Country(
+    country_Id NUMBER(20),
+    country_Name varchar2(20),
+    last_Update TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );';
+        DBMS_OUTPUT.PUT_LINE('New Table Created!');
+    END IF;
+END;

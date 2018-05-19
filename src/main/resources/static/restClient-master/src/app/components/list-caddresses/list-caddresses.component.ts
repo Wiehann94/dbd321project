@@ -24,7 +24,7 @@ export class ListCAddressesComponent implements OnInit {
   }
 
   deleteAddress(address){
-    this._addressService.deleteAddress(address.id).subscribe((data)=>{
+    this._addressService.deleteAddress(address.address_Id).subscribe((data)=>{
       this.address.splice(this.address.indexOf(address),1);
     },(error)=>{
       console.log(error);
@@ -33,14 +33,14 @@ export class ListCAddressesComponent implements OnInit {
 
   updatAddress(address){
     this._addressService.setter(address);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/address']);
 
 
   }
   newAddress(){
     let adresses = new Address();
     this._addressService.setter(adresses);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/address']);
 
   }
 
