@@ -1,0 +1,18 @@
+<div class="container">
+
+  <form (ngSubmit)="processFormCountry()">
+    <div class="form group">
+      <input type="text" name="id" class="form-control" [(ngModel)]="country.country_Id">
+    </div>
+    <div class="form group">
+      <label for="country_Name">Country Name</label>
+      <input type="text" name="address" class="form-control" [(ngModel)]="counry.country_Name">
+    </div>
+    <div class="form group">
+      <label for="last_Update">Last Update</label>
+      <input type="text" name="suburb" class="form-control" [(ngModel)]="counry.last_Update">
+    </div>
+    <input type="submit" value="save" class="btn btn-success">
+  </form>
+</div>
+

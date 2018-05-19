@@ -1,0 +1,21 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+    <th>Country Id</th>
+    <th>Country Name</th>
+    <th>Last Update</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let countries of countriesList">
+      <td>{{countries.country_Id}}</td>
+      <td>{{countries.country_Name}}</td>
+      <td>{{countries.last_Update}}</td>
+      <td><button class="btn btn-danger" (click)="deleteCountry(countries)">Delete</button>
+        <button class="btn btn-primary" (click)="updatCountry(countries)">Edit</button></td>
+
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="newCountry()">New Country</button>
+</div>

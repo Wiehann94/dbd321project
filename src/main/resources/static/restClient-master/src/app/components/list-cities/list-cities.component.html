@@ -1,0 +1,23 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+    <th>City Id</th>
+    <th>City Name</th>
+    <th>Last Update</th>
+    <th>Country Id</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cities of city">
+      <td>{{cities.city_Id}}</td>
+      <td>{{cities.city_Name}}</td>
+      <td>{{cities.last_Update}}</td>
+      <td>{{cities.country_Id}}</td>
+      <td><button class="btn btn-danger" (click)="deleteCity(cities)">Delete</button>
+        <button class="btn btn-primary" (click)="updateCity(cities)">Edit</button></td>
+
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="newCity()">New City</button>
+</div>

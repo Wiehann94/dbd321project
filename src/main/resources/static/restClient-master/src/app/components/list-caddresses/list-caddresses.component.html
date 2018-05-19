@@ -1,0 +1,27 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+    <th>Aaddress Id</th>
+    <th>Address</th>
+    <th>Suburb</th>
+    <th>Postal Code</th>
+    <th>Last Update</th>
+    <th>City Id</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let addresses of address">
+      <td>{{addresses.address_Id}}</td>
+      <td>{{addresses.address}}</td>
+      <td>{{addresses.suburb}}</td>
+      <td>{{addresses.postal_Code}}</td>
+      <td>{{addresses.last_Update}}</td>
+      <td>{{addresses.city_Id}}</td>
+      <td><button class="btn btn-danger" (click)="deleteAddress(addresses)">Delete</button>
+        <button class="btn btn-primary" (click)="updatAddress(addresses)">Edit</button></td>
+
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="newAddress()">New Address</button>
+</div>
