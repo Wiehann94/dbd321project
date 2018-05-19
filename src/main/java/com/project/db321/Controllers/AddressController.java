@@ -43,7 +43,8 @@ public class AddressController {
     }
 
     @DeleteMapping("/address/{id}")
-    public void deleteAddress(@PathVariable String id) {
-        addressRepository.deleteById(Long.valueOf(id));
+    public boolean deleteAddress(@PathVariable Long id) {
+        addressRepository.deleteById(id);
+        return true;
     }
 }

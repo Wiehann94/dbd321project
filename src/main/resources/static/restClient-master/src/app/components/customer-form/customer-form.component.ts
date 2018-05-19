@@ -19,7 +19,7 @@ export class CustomerFormComponent implements OnInit {
   }
 
   processFormCustomer(){
-    if(this.customer.address_Id==undefined){
+    if(this.customer.customer_Id==undefined){
       this._customerService.createCustomer(this.customer).subscribe((customer)=>{
         console.log(customer);
         this._router.navigate(['/']);

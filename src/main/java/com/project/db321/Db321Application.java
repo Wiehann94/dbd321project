@@ -10,6 +10,7 @@ package com.project.db321;
         import com.project.db321.Repositories.CustomerRepository;
         import com.project.db321.generateData.dataGenerator;
         import org.hibernate.HibernateException;
+        import org.junit.Test;
         import org.slf4j.Logger;
         import org.slf4j.LoggerFactory;
         import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class Db321Application implements CommandLineRunner {
     public void run(String[] args) {
         Timestamp time = new Timestamp(System.currentTimeMillis());
 
-        for (Long i=1L; i<=100; i++) {
+        for (Long i=1L; i<=10; i++) {
             try {
                 countryRepository.save(new Country(dataGenerator.countryNameGenerator(),time));
 
@@ -51,7 +52,7 @@ public class Db321Application implements CommandLineRunner {
 
                 addressRepository.save(new Address(dataGenerator.cityNameGenerator(),
                         dataGenerator.suburbGenerator(),
-                        dataGenerator.postalCodeGenerator(),2778+dataGenerator.postalCodeGenerator(),time,i));
+                        dataGenerator.postalCodeGenerator(),i++,time,i));
 
             customerRepository.save(new Customer(dataGenerator.customerFirstGenerator(),
                     dataGenerator.customerLastNameGenerator(),dataGenerator.emailGenerator(),
@@ -64,9 +65,22 @@ public class Db321Application implements CommandLineRunner {
             {
                 LOGGER.info(e.toString());
             }
-//
+        }
+    }
+    @Test
+    public void testtest()
+    {
+        Timestamp time = new Timestamp(System.currentTimeMillis());
+        for (Long i=1L; i<=10; i++) {
 
+
+            System.out.println(new Address(dataGenerator.cityNameGenerator(),
+                    dataGenerator.suburbGenerator(),
+                    dataGenerator.postalCodeGenerator(), i++, time, i));
 
         }
+
+
+
     }
 }

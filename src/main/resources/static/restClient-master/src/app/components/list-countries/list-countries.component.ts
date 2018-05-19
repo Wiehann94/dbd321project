@@ -24,8 +24,9 @@ export class ListCountriesComponent implements OnInit {
   }
 
   deleteCountry(country){
-    this._countryService.deleteCountry(country.id).subscribe((data)=>{
+    this._countryService.deleteCountry(country.country_Id).subscribe((data)=>{
       this.countriesList.splice(this.countriesList.indexOf(country),1);
+      this.ngOnInit();
     },(error)=>{
       console.log(error);
     });
@@ -33,14 +34,14 @@ export class ListCountriesComponent implements OnInit {
 
   updatCountry(country){
     this._countryService.setter(country);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/country']);
 
 
   }
   newCountry(){
     let countries = new Country();
     this._countryService.setter(countries);
-    this._router.navigate(['/op']);
+    this._router.navigate(['/country']);
 
   }
 }

@@ -43,8 +43,9 @@ public class CountryController {
     }
 
     @DeleteMapping("/country/{id}")
-    public void deleteCountry(@PathVariable String id) {
-        countryRepository.deleteById(Long.valueOf(id));
+    public boolean deleteCountry(@PathVariable Long id) {
+        countryRepository.deleteById(id);
+        return true;
     }
 
 
