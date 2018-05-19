@@ -34,6 +34,15 @@ public class Address {
         this.city_Id = city_Id;
     }
 
+    public Address( String address, String suburb, Long postal_Code, Long phoneNo, Timestamp last_Update, Long city_Id) {
+        this.address = address;
+        Suburb = suburb;
+        this.postal_Code = postal_Code;
+        this.phone_No = phoneNo;
+        this.last_Update = last_Update;
+        this.city_Id = city_Id;
+    }
+
     public Long getAddress_Id() {
         return address_Id;
     }

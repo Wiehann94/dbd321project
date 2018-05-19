@@ -9,6 +9,7 @@ package com.project.db321;
         import com.project.db321.Repositories.CountryRepository;
         import com.project.db321.Repositories.CustomerRepository;
         import com.project.db321.generateData.dataGenerator;
+        import org.hibernate.HibernateException;
         import org.slf4j.Logger;
         import org.slf4j.LoggerFactory;
         import org.springframework.beans.factory.annotation.Autowired;
@@ -42,32 +43,30 @@ public class Db321Application implements CommandLineRunner {
     public void run(String[] args) {
         Timestamp time = new Timestamp(System.currentTimeMillis());
 
-        for (Long i=1L; i<=100L; i++) {
-//            //country
-//            //countryRepository.save(new Country(i,dataGenerator.countryNameGenerator(),time));
+        for (Long i=1L; i<=100; i++) {
+            try {
+                countryRepository.save(new Country(dataGenerator.countryNameGenerator(),time));
+
+                cityRepository.save(new City(dataGenerator.cityNameGenerator(),time,i));
+
+                addressRepository.save(new Address(dataGenerator.cityNameGenerator(),
+                        dataGenerator.suburbGenerator(),
+                        dataGenerator.postalCodeGenerator(),2778+dataGenerator.postalCodeGenerator(),time,i));
+
+            customerRepository.save(new Customer(dataGenerator.customerFirstGenerator(),
+                    dataGenerator.customerLastNameGenerator(),dataGenerator.emailGenerator(),
+                    dataGenerator.activeStatusGenerator(),i));
+
+
+                LOGGER.info(i.toString());
+            }
+            catch(HibernateException e)
+            {
+                LOGGER.info(e.toString());
+            }
 //
-            countryRepository.save(new Country(i, "South Africa", time));
+
+
         }
-            //            //city
-//           // cityRepository.save(new City(i,"Pretoria :" + i, time, i));
-//            //address
-//            addressRepository.save(new Address( i, "60 green road :" + i, "Annlin" + i, 1820L + i, 011123600L+ i, time, i));
-//            //cust
-//
-//            //customerRepository.save(new Customer(i, dataGenerator.customerFirstAndLastNames(), dataGenerator.customerFirstAndLastNames(),dataGenerator.emailGenerator().toString(), "F",i));
-//            customerRepository.save(new Customer(i,"Wiehann :", "Vermaak :","W"+ i +"@email.com", "F",i));
-//        }
-//        for (Long i=1L; i<=10; i++) {
-//
-//            cityRepository.save(new City(i,"Pretoria :" + i, time, i));
-//        }
-
-
-//        for (Long i=1L; i<=10; i++){
-//            countryRepository.save(new Country(i++,dataGenerator.countryNameGenerator(),time));
-//
-//           // cityRepository.save(new City(i,dataGenerator.cityNameGenerator(),time,i));
-//
-//        }
     }
 }

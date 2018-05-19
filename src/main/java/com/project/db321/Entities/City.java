@@ -28,6 +28,12 @@ public class City {
         this.country_Id = country_Id;
     }
 
+    public City( String city_Name, Timestamp last_Update, Long country_Id) {
+        this.city_Name = city_Name;
+        this.last_Update = last_Update;
+        this.country_Id = country_Id;
+    }
+
     public Long getCity_Id() {
         return city_Id;
     }

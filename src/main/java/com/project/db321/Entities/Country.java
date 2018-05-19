@@ -27,6 +27,11 @@ public class Country {
         this.last_Update = last_Update;
     }
 
+    public Country( String country_Name, Timestamp last_Update) {
+        this.country_Name = country_Name;
+        this.last_Update = last_Update;
+    }
+
     public Long getCountry_Id() {
         return country_Id;
     }
