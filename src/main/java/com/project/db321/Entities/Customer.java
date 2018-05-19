@@ -31,6 +31,14 @@ public class Customer {
         this.address_Id = address_Id;
     }
 
+    public Customer( String first_Name, String last_Name, String email, String active, Long address_Id) {
+        this.first_Name = first_Name;
+        this.last_Name = last_Name;
+        this.email = email;
+        this.active = active;
+        this.address_Id = address_Id;
+    }
+
     public Long getCustomer_Id() {
         return customer_Id;
     }
